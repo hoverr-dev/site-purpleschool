@@ -36,6 +36,25 @@
 	text-align: center;
 }
 
+.chip_wrapper {
+	display: flex;
+	gap: 24px;
+	margin: 0 -24px 32px -24px;
+	padding-left: 24px;
+	overflow: scroll;
+	scrollbar-width: none;
+}
+
+.chip_wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.courses_wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 80px;
+}
+
 @media (max-width: 1200px) {
 	.hero {
 		flex-direction: column;
